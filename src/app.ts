@@ -146,7 +146,7 @@ app.get('/users/:id',
   });
 
 // iniziamo a fare post e put
-app.post('/users/',
+app.post('/users',
   query('token').notEmpty(),//mid di controllo sul token,verifica che non sia vuoto
   body('firstName').trim().notEmpty(),
   body('lastName').trim().notEmpty(),
